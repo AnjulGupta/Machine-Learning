@@ -1,0 +1,17 @@
+q-1-6:
+      
+• Handling missing values in data in Decision Tree -
+
+1. Ignore the missing values 
+   - If the attribute with missing value is not significant for output then ignore missing values from it.
+   - If data set is large and attribute is important then ignore that row having missing value.
+   
+2. For categorical attribute, Fill missing values with the mode of that attribute( value with most occurence).
+    
+3. For continuous data attribute, Fill missing values with the mean for that attribute.
+
+4. For continuous data attribute, Fill missing values with the median for that attribute.
+    
+5. Predecide a path for missing values and take always that path only (like move to left most child if missing value found).
+    
+6. Lazy Decision Tree (Reduced Feature Models/Known Value Strategy):- in this the prediction model is constructed at testing time based on the available test instance values. This is also known as ‘Known values strategy’. During tree construction it uses only attributes whose values are known at testing. Hence it naturally handles the missing values at testing.
